@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LawrenZone | Exploring Technology in Education</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="progress" id="progress"></div>
+    <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+
+    <!-- NAVIGATION -->
+    <header class="nav" id="nav">
+      <a href="#home" class="logo" data-scroll
+        ><span class="logo-mark">LZ</span> LawrenZone</a
+      >
+      <button
+        class="menu-btn"
+        id="menuBtn"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" data-scroll>Home</a>
+        <a href="#video" data-scroll>Video</a>
+        <a href="#about" data-scroll>About</a>
+        <a href="#technology" data-scroll>Technology</a>
+        <span class="nav-ind" id="navInd"></span>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="home" class="hero">
+        <div class="grid-bg"></div>
+        <!-- Animated circuit board (decorative) -->
+        <svg
+          class="circuit-svg"
+          viewBox="0 0 1200 700"
+          preserveAspectRatio="xMidYMid slice"
+          aria-hidden="true"
+        >
+          <g class="traces">
+            <path d="M0 140 H220 L280 200 H520" />
+            <path d="M1200 180 H960 L900 240 H700" />
+            <path d="M0 520 H180 L240 460 H430 L470 500 H600" />
+            <path d="M1200 560 H1000 L940 500 H760" />
+            <path d="M300 0 V90 L340 130 V260" />
+            <path d="M900 700 V620 L860 580 V470" />
+          </g>
+          <g class="pulses">
+            <path d="M0 140 H220 L280 200 H520" />
+            <path
+              d="M1200 180 H960 L900 240 H700"
+              style="animation-delay: -2s"
+            />
+            <path
+              d="M0 520 H180 L240 460 H430 L470 500 H600"
+              style="animation-delay: -4s"
+            />
+            <path
+              d="M1200 560 H1000 L940 500 H760"
+              style="animation-delay: -1s"
+            />
+            <path d="M300 0 V90 L340 130 V260" style="animation-delay: -3s" />
+            <path
+              d="M900 700 V620 L860 580 V470"
+              style="animation-delay: -5s"
+            />
+          </g>
+          <g class="nodes">
+            <circle cx="520" cy="200" r="5" />
+            <circle cx="700" cy="240" r="5" />
+            <circle cx="600" cy="500" r="5" />
+            <circle cx="760" cy="500" r="5" />
+            <circle cx="340" cy="260" r="5" />
+            <circle cx="860" cy="470" r="5" />
+          </g>
+        </svg>
+
+        <div class="hero-inner">
+          <div class="badge reveal">
+            <i class="dot"></i> BEEd Student &nbsp;|&nbsp; Digital Learning
+          </div>
+          <h1 class="reveal">LawrenZone</h1>
+          <p class="subtitle reveal">Exploring Technology in Education</p>
+          <p class="hero-text reveal">
+            Discover how technology continues to shape the way we learn,
+            communicate, and experience education.
+          </p>
+          <button class="btn reveal" id="watchBtn">
+            <span>WATCH THE VIDEO</span><b>&#9654;</b>
+          </button>
+        </div>
+        <a
+          href="#video"
+          class="scroll-cue"
+          data-scroll
+          aria-label="Scroll to video"
+          ><span></span
+        ></a>
+      </section>
+
+      <!-- VIDEO (main focus) -->
+      <section id="video" class="section video-section">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>When technology becomes more powerful than we imagined.</h2>
+          </div>
+
+          <div class="video-wrap reveal">
+            <div class="video-glow"></div>
+            <div class="video-frame">
+              <i class="corner tl"></i><i class="corner tr"></i
+              ><i class="corner bl"></i><i class="corner br"></i>
+              <div class="screen">
+                <!-- REPLACE "video.mp4" with your own video file placed in this folder. -->
+                <video id="vid" controls preload="metadata" playsinline>
+                  <source src="LawrenZone.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div class="placeholder" id="placeholder">
+                  <button class="big-play" id="bigPlay" aria-label="Play video">
+                    &#9654;
+                  </button>
+                  <p class="ph-title">Your video appears here</p>
+                  <p class="ph-sub">
+                    Add <code>video.mp4</code> to this folder to replace the
+                    placeholder.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="container narrow">
+          <div class="card about-card reveal">
+            <div class="avatar" aria-hidden="true">LL</div>
+            <div>
+              <h2>About Lawrence</h2>
+              <p>
+                Lawrence Labayo is a Bachelor of Elementary Education student
+                interested in how technology can support learning,
+                communication, creativity, and modern education.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECHNOLOGY -->
+      <section id="technology" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>Technology Meets Education</h2>
+            <p>
+              Technology has become an important part of modern education. From
+              digital learning materials to online communication and interactive
+              tools, technology provides new ways for students and teachers to
+              learn, create, and connect.
+            </p>
+          </div>
+          <div class="cards">
+            <article class="card tilt reveal">
+              <div class="icon">&#128218;</div>
+              <h3>Digital Learning</h3>
+              <p>
+                Technology provides students with new ways to access information
+                and learning materials.
+              </p>
+            </article>
+            <article class="card tilt reveal">
+              <div class="icon">&#128161;</div>
+              <h3>Innovation</h3>
+              <p>
+                Digital tools encourage creativity and new approaches to
+                teaching and learning.
+              </p>
+            </article>
+            <article class="card tilt reveal">
+              <div class="icon">&#128640;</div>
+              <h3>Future Education</h3>
+              <p>
+                Technology continues to influence how education will develop in
+                the future.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p class="copy">&copy; 2026 Lawrence Labayo</p>
+      <p>Bachelor of Elementary Education</p>
+      <p class="quote">
+        "Learning today. Teaching tomorrow. Embracing technology."
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
